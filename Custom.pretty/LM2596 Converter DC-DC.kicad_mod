@@ -1,0 +1,221 @@
+(footprint "LM2596 Converter DC-DC"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "eae92bda-c6a5-49ac-94d9-0f0e2af8550c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "LM2596 Converter DC-DC"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "dde8351d-ca34-47e1-93e7-4f17f670a49a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c52d322f-4506-4f82-bacd-43e53a00181e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9b4f48f7-486b-46bc-be04-9702b0fed922")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8a93dbd1-29e1-42f6-8297-aef84a570d7a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -10.61 -21.8258)
+		(end 10.39 21.844)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "aea7b4b9-ded3-4d14-ad9a-40146b41d716")
+	)
+	(fp_rect
+		(start -10.922 -22.098)
+		(end -7.5 -18.796)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "57ea1541-3d92-4500-a392-cd77bc3d9410")
+	)
+	(fp_rect
+		(start -10.922 18.796)
+		(end -7.5 22.098)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "5173fec2-e0f8-4089-984e-58d2e941bc59")
+	)
+	(fp_rect
+		(start 7.39 18.796)
+		(end 10.668 22.098)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "8b006eb8-5c17-476c-9ce7-5ff84427938f")
+	)
+	(fp_rect
+		(start 7.5 -22.098)
+		(end 10.668 -18.796)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "ca41ed40-b0b5-4f9e-b9cc-0f6f3cc3c19e")
+	)
+	(fp_text user "IN-"
+		(at 8 23.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "1461478f-cdee-4dbc-8f18-01121efd953a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "IN+"
+		(at -10 23.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "1e89e5b3-1072-4a17-a727-b9b4781728a6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "OUT-"
+		(at 7.5 -22 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "28e2a24f-63c5-4c4f-bd60-cd0a2f9f9485")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "OUT+"
+		(at -11 -22 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a26aa388-5e5b-457a-8313-9c77018833c8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "85d234cb-a189-4da9-8f17-e5be6122e592")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -9 20.32)
+		(size 2.5 2.5)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "afa4e672-02bf-48b4-96ef-32f616aba1e3")
+	)
+	(pad "2" thru_hole circle
+		(at 9 20.32)
+		(size 2.5 2.5)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "d84e3b9f-6feb-43c6-ac58-a06f06648f9a")
+	)
+	(pad "3" thru_hole circle
+		(at -9 -20.32)
+		(size 2.5 2.5)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "93996f03-5d6c-4954-97c0-c8dfdf73545f")
+	)
+	(pad "4" thru_hole circle
+		(at 9 -20.32)
+		(size 2.5 2.5)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "047af62e-54f0-430e-a129-9bad9941bec4")
+	)
+)
