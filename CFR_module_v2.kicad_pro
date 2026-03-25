@@ -592,6 +592,15 @@
         "P_Low",
         "P_Mot"
       ],
+      "Net-(ALM0-Pin_3)": [
+        "Power"
+      ],
+      "Net-(ALM0-Pin_4)": [
+        "Power"
+      ],
+      "Net-(ALM0-Pin_6)": [
+        "Power"
+      ],
       "Net-(ALM1-Pin_2)": [
         "Power"
       ],

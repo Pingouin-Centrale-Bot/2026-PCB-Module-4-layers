@@ -5,7 +5,7 @@
 	(uuid "093030ec-eaab-4048-b7b9-e97fcb6c2945")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_02x04_Row_Letter_Last"
+		(symbol "Connector_Generic:Conn_02x04_Top_Bottom"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -21,7 +21,7 @@
 					)
 				)
 			)
-			(property "Value" "Conn_02x04_Row_Letter_Last"
+			(property "Value" "Conn_02x04_Top_Bottom"
 				(at 1.27 -7.62 0)
 				(effects
 					(font
@@ -47,7 +47,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, double row, 02x04, row letter last pin numbering scheme (pin number consists of a letter for the row and a number for the pin index in this row. 1a, ..., Na; 1b, ..., Nb)), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, double row, 02x04, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -74,7 +74,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_02x04_Row_Letter_Last_1_1"
+			(symbol "Conn_02x04_Top_Bottom_1_1"
 				(rectangle
 					(start -1.27 3.81)
 					(end 3.81 -6.35)
@@ -177,14 +177,14 @@
 				(pin passive line
 					(at -5.08 2.54 0)
 					(length 3.81)
-					(name "Pin_1a"
+					(name "Pin_1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1a"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -195,14 +195,14 @@
 				(pin passive line
 					(at -5.08 0 0)
 					(length 3.81)
-					(name "Pin_2a"
+					(name "Pin_2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2a"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -213,14 +213,14 @@
 				(pin passive line
 					(at -5.08 -2.54 0)
 					(length 3.81)
-					(name "Pin_3a"
+					(name "Pin_3"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3a"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -231,14 +231,14 @@
 				(pin passive line
 					(at -5.08 -5.08 0)
 					(length 3.81)
-					(name "Pin_4a"
+					(name "Pin_4"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4a"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -249,14 +249,14 @@
 				(pin passive line
 					(at 7.62 2.54 180)
 					(length 3.81)
-					(name "Pin_1b"
+					(name "Pin_5"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1b"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -267,14 +267,14 @@
 				(pin passive line
 					(at 7.62 0 180)
 					(length 3.81)
-					(name "Pin_2b"
+					(name "Pin_6"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2b"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -285,14 +285,14 @@
 				(pin passive line
 					(at 7.62 -2.54 180)
 					(length 3.81)
-					(name "Pin_3b"
+					(name "Pin_7"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3b"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -303,14 +303,14 @@
 				(pin passive line
 					(at 7.62 -5.08 180)
 					(length 3.81)
-					(name "Pin_4b"
+					(name "Pin_8"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4b"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3353,6 +3353,92 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_02x04_Top_Bottom")
+		(at 106.68 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "038d1bb7-2225-439d-b083-56d0cd5bed95")
+		(property "Reference" "MOT1"
+			(at 107.95 58.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_02x04_Top_Bottom"
+			(at 107.95 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Horizontal"
+			(at 106.68 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x04, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 106.68 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "07badf1b-bb9b-4096-bd22-b069a80aa61e")
+		)
+		(pin "8"
+			(uuid "217cbe88-0a86-4938-9e85-76a08637365f")
+		)
+		(pin "5"
+			(uuid "4dd731a0-6aaa-422a-a2db-f3bafe0ec72a")
+		)
+		(pin "6"
+			(uuid "61a0e61e-2619-419b-bee7-aa39974cc9c9")
+		)
+		(pin "3"
+			(uuid "01d1e844-f744-4c9c-9b64-6a1605b5a50e")
+		)
+		(pin "4"
+			(uuid "e277b51d-7f2a-418a-bc2d-e5bc69e9bdb7")
+		)
+		(pin "7"
+			(uuid "3a96ca19-f3a4-4e37-bab8-ff5c07a84513")
+		)
+		(pin "2"
+			(uuid "1661513f-162c-4b8f-bd15-0c0d8f947b7b")
+		)
+		(instances
+			(project ""
+				(path "/3500e54e-e85f-411b-abf3-a014edb1e869/320ac4e2-24aa-4fcc-8306-200cf919c85f"
+					(reference "MOT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 114.3 62.23 90)
 		(unit 1)
@@ -3888,92 +3974,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_02x04_Row_Letter_Last")
-		(at 106.68 100.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "383f0559-7179-47d4-9a9f-056ceba5e09c")
-		(property "Reference" "MOT2"
-			(at 108.204 101.346 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_02x04_Row_Letter_Last"
-			(at 107.95 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal"
-			(at 106.68 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 106.68 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, double row, 02x04, row letter last pin numbering scheme (pin number consists of a letter for the row and a number for the pin index in this row. 1a, ..., Na; 1b, ..., Nb)), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 106.68 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4b"
-			(uuid "91b0d3d7-fe7f-4b5a-b7c3-4306c68ebf0a")
-		)
-		(pin "2b"
-			(uuid "86120c78-8b65-46c1-9b89-442ddd838c70")
-		)
-		(pin "4a"
-			(uuid "cbd183aa-7564-43e3-ab66-6833989b915c")
-		)
-		(pin "3a"
-			(uuid "b3572940-717b-45ab-afca-364937ed040d")
-		)
-		(pin "2a"
-			(uuid "28a73492-af9b-44da-8a79-3943783e7cb7")
-		)
-		(pin "1a"
-			(uuid "210dc745-9e61-40ce-960f-a5f8f9cfeb2b")
-		)
-		(pin "3b"
-			(uuid "b2dc84e5-5837-4e91-9659-84e1207e8b8b")
-		)
-		(pin "1b"
-			(uuid "14d168eb-76bb-49a7-b541-3deefc7a2cad")
-		)
-		(instances
-			(project "CFR_module_v2"
-				(path "/3500e54e-e85f-411b-abf3-a014edb1e869/320ac4e2-24aa-4fcc-8306-200cf919c85f"
-					(reference "MOT2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+BATT")
 		(at 102.87 85.09 270)
 		(unit 1)
@@ -4429,6 +4429,92 @@
 			(project "CFR_module_v2"
 				(path "/3500e54e-e85f-411b-abf3-a014edb1e869/320ac4e2-24aa-4fcc-8306-200cf919c85f"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x04_Top_Bottom")
+		(at 106.68 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "595df33a-0c0f-4898-80e4-922f6fe65325")
+		(property "Reference" "MOT2"
+			(at 107.95 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Horizontal"
+			(at 107.95 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x04, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 106.68 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "33cdf7fc-f0e3-4639-a143-542b9d85370f")
+		)
+		(pin "8"
+			(uuid "87d7090c-2f3d-4249-bd64-4ae234ba547e")
+		)
+		(pin "5"
+			(uuid "2f773ccc-da07-4e73-b585-0e416e41035f")
+		)
+		(pin "6"
+			(uuid "fd2c1c9a-8f85-4d09-ab04-c41beef8bbcd")
+		)
+		(pin "3"
+			(uuid "b9e01122-41f4-4269-8860-59565dc9d97c")
+		)
+		(pin "4"
+			(uuid "b39635ed-f2b8-4181-bfb8-d4b759a6b431")
+		)
+		(pin "7"
+			(uuid "eb27883e-afb9-41e0-bf5a-db4dc415b818")
+		)
+		(pin "2"
+			(uuid "584ff5c2-ea13-4316-88dd-dc970ad570b8")
+		)
+		(instances
+			(project "CFR_module_v2"
+				(path "/3500e54e-e85f-411b-abf3-a014edb1e869/320ac4e2-24aa-4fcc-8306-200cf919c85f"
+					(reference "MOT2")
 					(unit 1)
 				)
 			)
@@ -5439,23 +5525,23 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_02x04_Row_Letter_Last")
+		(lib_id "Connector_Generic:Conn_02x04_Top_Bottom")
 		(at 106.68 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a28189a2-181a-4665-a0e8-ee13b41c35a3")
+		(uuid "a279bb36-c8d8-42c2-99c6-e3b3a69bd08f")
 		(property "Reference" "MOT3"
-			(at 108.204 145.796 90)
+			(at 107.95 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Conn_02x04_Row_Letter_Last"
+		(property "Value" "Conn_02x04_Top_Bottom"
 			(at 107.95 138.43 0)
 			(effects
 				(font
@@ -5464,7 +5550,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Horizontal"
 			(at 106.68 144.78 0)
 			(effects
 				(font
@@ -5482,7 +5568,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x04, row letter last pin numbering scheme (pin number consists of a letter for the row and a number for the pin index in this row. 1a, ..., Na; 1b, ..., Nb)), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connector, double row, 02x04, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 106.68 144.78 0)
 			(effects
 				(font
@@ -5491,29 +5577,29 @@
 				(hide yes)
 			)
 		)
-		(pin "4b"
-			(uuid "b15db309-a31d-4468-821f-69d2a45c493f")
+		(pin "1"
+			(uuid "96ce1d24-dba7-4c05-8d38-15e768b2a328")
 		)
-		(pin "2b"
-			(uuid "6ae006b4-fcd4-42bf-b229-b3ea9624da4d")
+		(pin "8"
+			(uuid "56d96f09-867d-41a1-b8f0-ea2944e6a419")
 		)
-		(pin "4a"
-			(uuid "601ed1e7-fd50-4767-abef-a8c34baa76b8")
+		(pin "5"
+			(uuid "997cde64-f477-4df7-b197-23a60604a9f0")
 		)
-		(pin "3a"
-			(uuid "313efdfd-dd59-4d7c-99b2-5feb9b138e63")
+		(pin "6"
+			(uuid "77c434cb-4528-44f2-a5b1-6c1194224cbf")
 		)
-		(pin "2a"
-			(uuid "9c7272e0-995a-4cd8-99bb-15348dbc6d5a")
+		(pin "3"
+			(uuid "f1ef087e-38d5-4988-818d-29dceb194ff7")
 		)
-		(pin "1a"
-			(uuid "291f01a5-7d73-4ce0-8596-45e2e5083f94")
+		(pin "4"
+			(uuid "d00685c5-b409-46fc-888c-10ad5e497819")
 		)
-		(pin "3b"
-			(uuid "fafca602-09bc-464f-9b60-3fe05b7f605d")
+		(pin "7"
+			(uuid "7e4c06bf-d345-49d2-a7ad-07f0bc362cd8")
 		)
-		(pin "1b"
-			(uuid "ede4634a-4b6c-49f5-8c0b-d546fb84646a")
+		(pin "2"
+			(uuid "8bdd8bc9-7f87-429a-a51c-de04f9905061")
 		)
 		(instances
 			(project "CFR_module_v2"
@@ -6971,92 +7057,6 @@
 			(project "CFR_module_v2"
 				(path "/3500e54e-e85f-411b-abf3-a014edb1e869/320ac4e2-24aa-4fcc-8306-200cf919c85f"
 					(reference "JP4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_02x04_Row_Letter_Last")
-		(at 106.68 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ed250011-9ac2-421e-a73f-26cf0de3163b")
-		(property "Reference" "MOT1"
-			(at 108.204 58.166 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_02x04_Row_Letter_Last"
-			(at 107.95 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal"
-			(at 106.68 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 106.68 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, double row, 02x04, row letter last pin numbering scheme (pin number consists of a letter for the row and a number for the pin index in this row. 1a, ..., Na; 1b, ..., Nb)), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 106.68 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4b"
-			(uuid "708dd536-5fbf-44b4-8832-28b10581adaa")
-		)
-		(pin "2b"
-			(uuid "f4b670f1-5a74-4329-bd90-acf1c2228fa9")
-		)
-		(pin "4a"
-			(uuid "3b01f46b-f320-4775-9e01-6fd30bf82954")
-		)
-		(pin "3a"
-			(uuid "3c791690-4f02-41d7-89f0-0e630580b17b")
-		)
-		(pin "2a"
-			(uuid "051b5a8b-837a-49be-8ea4-9bc2aac75232")
-		)
-		(pin "1a"
-			(uuid "fad288f5-1187-47a9-8ef9-7e82e54692ce")
-		)
-		(pin "3b"
-			(uuid "ae0f9e2f-e2ed-4e52-977b-c154f25c1a8c")
-		)
-		(pin "1b"
-			(uuid "86279528-81ad-47d5-bf38-8df52a335370")
-		)
-		(instances
-			(project ""
-				(path "/3500e54e-e85f-411b-abf3-a014edb1e869/320ac4e2-24aa-4fcc-8306-200cf919c85f"
-					(reference "MOT1")
 					(unit 1)
 				)
 			)
