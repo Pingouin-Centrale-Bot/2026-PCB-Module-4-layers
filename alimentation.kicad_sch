@@ -566,142 +566,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Fuse"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "F"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Fuse"
-				(at -1.905 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Fuse"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "fuse"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*Fuse*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Fuse_0_1"
-				(rectangle
-					(start -0.762 -2.54)
-					(end 0.762 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Fuse_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Jumper:Jumper_3_Bridged12"
 			(pin_names
 				(offset 0)
@@ -1896,7 +1760,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 45.72) (xy 48.26 45.72)
+			(xy 43.18 45.72) (xy 59.69 45.72)
 		)
 		(stroke
 			(width 0)
@@ -1966,7 +1830,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 48.26) (xy 81.28 53.34)
+			(xy 81.28 48.26) (xy 81.28 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2036,16 +1900,6 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 45.72) (xy 59.69 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8beefe9-421a-4521-838a-6b1cd6cd51ec")
-	)
-	(wire
-		(pts
 			(xy 53.34 39.37) (xy 62.23 39.37)
 		)
 		(stroke
@@ -2086,17 +1940,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 45.72) (xy 93.98 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8e4c491-28bb-4b12-b97b-4067c357b66c")
-	)
-	(wire
-		(pts
-			(xy 74.93 45.72) (xy 81.28 45.72)
+			(xy 74.93 45.72) (xy 93.98 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2133,72 +1977,6 @@
 			(type default)
 		)
 		(uuid "f8c1e748-025f-4ca5-b7f1-ce847837898a")
-	)
-	(global_label "5V_in"
-		(shape input)
-		(at 77.47 45.72 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "09002a14-448c-4482-9253-0ad067879c7e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.47 37.7153 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "V0_in"
-		(shape input)
-		(at 81.28 52.07 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5c40a4e7-7ce6-4b3d-a6db-054e3ad9381e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 89.2847 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VBatt_in"
-		(shape input)
-		(at 59.69 48.26 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "dc294f31-d8e4-4c67-bd89-a858068fda84")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 59.69 58.9256 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
 	)
 	(netclass_flag ""
 		(length 1.27)
@@ -2296,68 +2074,6 @@
 	(netclass_flag ""
 		(length 1.27)
 		(shape round)
-		(at 55.88 45.72 0)
-		(effects
-			(font
-				(size 0.508 0.508)
-				(color 84 24 19 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "ac6b99f4-8141-4a9f-96de-dd7e969cb511")
-		(property "Netclass" "Power"
-			(at 55.88 46.736 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -116.84 -66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 1.27)
-		(shape round)
-		(at 81.28 49.53 270)
-		(effects
-			(font
-				(size 0.508 0.508)
-				(color 84 24 19 1)
-			)
-			(justify right bottom)
-		)
-		(uuid "b5ea99ad-39ce-46e3-8b60-de07933c39fb")
-		(property "Netclass" "Power"
-			(at 80.518 48.514 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify right)
-			)
-		)
-		(property "Component Class" ""
-			(at 193.04 -123.19 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 1.27)
-		(shape round)
 		(at 48.26 45.72 0)
 		(effects
 			(font
@@ -2378,37 +2094,6 @@
 		)
 		(property "Component Class" ""
 			(at -63.5 218.44 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 1.27)
-		(shape round)
-		(at 88.9 45.72 0)
-		(effects
-			(font
-				(size 0.508 0.508)
-				(color 84 24 19 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "d9ecb560-dba2-4830-bef6-9aa96e03259b")
-		(property "Netclass" "Power"
-			(at 92.456 46.736 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify right)
-			)
-		)
-		(property "Component Class" ""
-			(at -22.86 218.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2484,7 +2169,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 53.34 107.95 0)
+		(at 74.93 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2492,7 +2177,7 @@
 		(dnp no)
 		(uuid "0e51c094-5b96-4151-8fd9-08107fb83eb3")
 		(property "Reference" "#PWR044"
-			(at 53.34 113.03 0)
+			(at 74.93 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2501,7 +2186,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 50.546 108.458 0)
+			(at 72.136 108.458 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -2509,7 +2194,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 109.22 0)
+			(at 74.93 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2518,7 +2203,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 109.22 0)
+			(at 74.93 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2527,7 +2212,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 53.34 107.95 0)
+			(at 74.93 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2960,7 +2645,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "34b9f911-458e-49dc-be59-815a51c5a249")
-		(property "Reference" "J3"
+		(property "Reference" "J1"
 			(at 38.862 102.87 90)
 			(effects
 				(font
@@ -3014,7 +2699,7 @@
 		(instances
 			(project "CFR_module_v2"
 				(path "/3500e54e-e85f-411b-abf3-a014edb1e869/e9ef5d66-fe95-422d-9c7c-9faf545122b6"
-					(reference "J3")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -3553,73 +3238,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
-		(at 52.07 45.72 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5f6b6798-d24f-49f1-9eba-1724af439723")
-		(property "Reference" "F1"
-			(at 52.07 47.498 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Fuse"
-			(at 52.07 43.942 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
-			(at 52.07 43.942 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 52.07 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 52.07 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7ffd9c33-706e-4bc8-8357-a40f2c5af97a")
-		)
-		(pin "2"
-			(uuid "b548f46c-9eab-427f-9716-43ba414b9a00")
-		)
-		(instances
-			(project "CFR_module_v2"
-				(path "/3500e54e-e85f-411b-abf3-a014edb1e869/e9ef5d66-fe95-422d-9c7c-9faf545122b6"
-					(reference "F1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 55.88 85.09 0)
 		(unit 1)
@@ -3816,15 +3434,15 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 69.85 102.87 90)
+		(at 54.61 102.87 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "71ef7782-18f5-4154-8fa6-ecbf398cd3ab")
-		(property "Reference" "J5"
-			(at 74.422 102.87 90)
+		(property "Reference" "J2"
+			(at 59.182 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3833,7 +3451,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 65.532 100.076 90)
+			(at 50.292 100.076 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3842,7 +3460,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal"
-			(at 69.85 102.87 0)
+			(at 54.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3851,7 +3469,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 102.87 0)
+			(at 54.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3860,7 +3478,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 69.85 102.87 0)
+			(at 54.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3877,7 +3495,7 @@
 		(instances
 			(project "CFR_module_v2"
 				(path "/3500e54e-e85f-411b-abf3-a014edb1e869/e9ef5d66-fe95-422d-9c7c-9faf545122b6"
-					(reference "J5")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -4145,75 +3763,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
-		(at 81.28 57.15 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "862f78a7-2daa-4dcf-8aea-446ce4026d05")
-		(property "Reference" "F2"
-			(at 79.502 57.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Fuse"
-			(at 83.058 57.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
-			(at 83.058 57.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 81.28 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 81.28 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0fdab0e5-668d-4168-ae1d-ebe301da3012")
-		)
-		(pin "2"
-			(uuid "d2865aed-97c7-479c-941c-64ef04bd5c69")
-		)
-		(instances
-			(project "CFR_module_v2"
-				(path "/3500e54e-e85f-411b-abf3-a014edb1e869/e9ef5d66-fe95-422d-9c7c-9faf545122b6"
-					(reference "F2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDPWR")
-		(at 69.85 107.95 0)
+		(at 54.61 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4221,7 +3772,7 @@
 		(dnp no)
 		(uuid "9037706a-b2c1-4196-b819-1cb4b16ff157")
 		(property "Reference" "#PWR049"
-			(at 69.85 113.03 0)
+			(at 54.61 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4230,7 +3781,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 67.056 108.458 0)
+			(at 51.816 108.458 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -4238,7 +3789,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 109.22 0)
+			(at 54.61 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4247,7 +3798,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 109.22 0)
+			(at 54.61 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4256,7 +3807,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 69.85 107.95 0)
+			(at 54.61 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4278,7 +3829,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 72.39 107.95 180)
+		(at 57.15 107.95 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4286,7 +3837,7 @@
 		(dnp no)
 		(uuid "94e984e9-ae83-4b41-b04d-5aa50fe0a0b7")
 		(property "Reference" "#PWR070"
-			(at 72.39 104.14 0)
+			(at 57.15 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4295,7 +3846,7 @@
 			)
 		)
 		(property "Value" "+V0"
-			(at 74.676 108.204 0)
+			(at 59.436 108.204 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4303,7 +3854,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.39 107.95 0)
+			(at 57.15 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4312,7 +3863,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 107.95 0)
+			(at 57.15 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4321,7 +3872,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 72.39 107.95 0)
+			(at 57.15 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4476,15 +4027,15 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 53.34 102.87 90)
+		(at 74.93 102.87 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "bd7c56c0-5087-430e-9f38-494a1fab8ec2")
-		(property "Reference" "J4"
-			(at 57.912 102.87 90)
+		(property "Reference" "J3"
+			(at 79.502 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4493,7 +4044,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 49.022 100.076 90)
+			(at 70.612 100.076 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4502,7 +4053,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal"
-			(at 53.34 102.87 0)
+			(at 74.93 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4511,7 +4062,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 53.34 102.87 0)
+			(at 74.93 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4520,7 +4071,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 53.34 102.87 0)
+			(at 74.93 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4537,7 +4088,7 @@
 		(instances
 			(project "CFR_module_v2"
 				(path "/3500e54e-e85f-411b-abf3-a014edb1e869/e9ef5d66-fe95-422d-9c7c-9faf545122b6"
-					(reference "J4")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -4545,7 +4096,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 55.88 107.95 180)
+		(at 77.47 107.95 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4553,7 +4104,7 @@
 		(dnp no)
 		(uuid "c20b92ab-062a-4e20-8eda-301f891ec206")
 		(property "Reference" "#PWR068"
-			(at 55.88 104.14 0)
+			(at 77.47 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4562,7 +4113,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 57.912 108.204 0)
+			(at 79.502 108.204 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4570,7 +4121,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 107.95 0)
+			(at 77.47 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4579,7 +4130,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 107.95 0)
+			(at 77.47 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4588,7 +4139,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 55.88 107.95 0)
+			(at 77.47 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4748,73 +4299,6 @@
 			(project ""
 				(path "/3500e54e-e85f-411b-abf3-a014edb1e869/e9ef5d66-fe95-422d-9c7c-9faf545122b6"
 					(reference "ALM0")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
-		(at 85.09 45.72 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d475040d-50f3-429c-84a1-dcac906f0794")
-		(property "Reference" "F3"
-			(at 85.09 47.498 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Fuse"
-			(at 85.09 43.942 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
-			(at 85.09 43.942 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 85.09 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 85.09 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "84d8e8d1-0524-4695-908a-1a0071b6d3b6")
-		)
-		(pin "2"
-			(uuid "2b1eafa8-b1ce-4573-b865-2fd0e153323b")
-		)
-		(instances
-			(project "CFR_module_v2"
-				(path "/3500e54e-e85f-411b-abf3-a014edb1e869/e9ef5d66-fe95-422d-9c7c-9faf545122b6"
-					(reference "F3")
 					(unit 1)
 				)
 			)
